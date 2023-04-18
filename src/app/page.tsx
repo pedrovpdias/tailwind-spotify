@@ -3,8 +3,11 @@ import {
   Search, 
   Library,
   ChevronLeft,
-  ChevronRight 
-} from 'lucide-react'
+  ChevronRight,
+  Play
+} from 'lucide-react';
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
@@ -121,9 +124,215 @@ export default function Home() {
             </button>
           </div>
 
-          <h1 className='font-bold text-4xl'>
+          <h1 className='font-semibold text-3xl mt-10'>
             Good Afternoon
           </h1>
+
+          <div className='grid grid-cols-3 gap-4 mt-4'>
+            <a
+              href='' 
+              className='
+                bg-white/10 hover:bg-white/20 transition-colors
+                rounded
+                flex items-center gap-4
+                overflow-hidden
+                group
+              '
+            >
+              <Image 
+                src="/image/wasting-light.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+              />
+              <strong>
+                Wasting Light
+              </strong>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 ml-auto mr-8 
+                  rounded-full 
+                  bg-green-500 
+                  invisible group-hover:visible
+                  text-black 
+                '
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a
+              href='' 
+              className='
+                bg-white/10 hover:bg-white/20 transition-colors
+                rounded
+                flex items-center gap-4
+                overflow-hidden 
+                group
+              '
+            >
+              <Image 
+                src="/image/born-n-raised.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+              />
+              <strong>
+                Wasting Light
+              </strong>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 ml-auto mr-8 
+                  rounded-full 
+                  bg-green-500 
+                  invisible group-hover:visible
+                  text-black 
+                '
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a
+              href='' 
+              className='
+                bg-white/10 hover:bg-white/20 transition-colors
+                rounded
+                flex items-center gap-4
+                overflow-hidden
+                group
+              '
+            >
+              <Image 
+                src="/image/paradise-valley.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+              />
+              <strong>
+                Wasting Light
+              </strong>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 ml-auto mr-8 
+                  rounded-full 
+                  bg-green-500 
+                  invisible group-hover:visible
+                  text-black 
+                '
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a
+              href='' 
+              className='
+                bg-white/10 hover:bg-white/20 transition-colors
+                rounded
+                flex items-center gap-4
+                overflow-hidden
+                group
+              '
+            >
+              <Image 
+                src="/image/sonic-highways.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+              />
+              <strong>
+                Wasting Light
+              </strong>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 ml-auto mr-8 
+                  rounded-full 
+                  bg-green-500 
+                  invisible group-hover:visible
+                  text-black 
+                '
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a
+              href='' 
+              className='
+                bg-white/10 hover:bg-white/20 transition-colors
+                rounded
+                flex items-center gap-4
+                overflow-hidden
+                group
+              '
+            >
+              <Image 
+                src="/image/metallica.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+              />
+              <strong>
+                Wasting Light
+              </strong>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 ml-auto mr-8 
+                  rounded-full 
+                  bg-green-500 
+                  invisible group-hover:visible
+                  text-black 
+                '
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a
+              href='' 
+              className='
+                bg-white/10 hover:bg-white/20 transition-colors
+                rounded
+                flex items-center gap-4
+                overflow-hidden
+                group
+              '
+            >
+              <Image 
+                src="/image/brand-new-eyes.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+              />
+              <strong>
+                Wasting Light
+              </strong>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 ml-auto mr-8 
+                  rounded-full 
+                  bg-green-500 
+                  invisible group-hover:visible
+                  text-black 
+                '
+              >
+                <Play />
+              </button>
+            </a>
+          </div>
 
         </main>
       </div>
