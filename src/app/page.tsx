@@ -1,114 +1,19 @@
 import { 
-  Home as HomeIcon, 
-  Search, 
-  Library,
   ChevronLeft,
   ChevronRight,
-  Play
+  Play,
 } from 'lucide-react';
 import Image from 'next/image';
+
+import Sidebar from '@/components/Sidebar';
+import Footer from '@/components/Footer';
 
 
 export default function Home() {
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
-        <aside 
-          className="
-            w-72  p-6
-            bg-zinc-950
-          "
-        >
-          <nav className='space-y-5'>
-            <a 
-              href="" 
-              className='
-                flex items-center gap-3 
-                text-sm font-semibold text-zinc-200
-              '
-            >
-              <HomeIcon />
-              Home
-            </a>
-            <a 
-              href="" 
-              className='
-                flex items-center gap-3 
-                text-sm font-semibold text-zinc-200
-              '
-            >
-              <Search />
-              Search
-            </a>
-            <a 
-              href="" 
-              className='
-                flex items-center gap-3 
-                text-sm font-semibold text-zinc-200
-              '
-            >
-              <Library />
-              Your Library
-            </a>
-          </nav>
-
-          <nav 
-            className='
-              flex flex-col gap-3
-              mt-6 pt-6 
-              border-t border-zinc-800
-            '
-          >
-            <a 
-              href=""
-              className='text-sm text-zinc-400 hover:text-zinc-100'
-            >
-              My Playlist
-            </a>
-
-            <a 
-              href=""
-              className='text-sm text-zinc-400 hover:text-zinc-100'
-            >
-              Smooth Jazz
-            </a>
-
-            <a 
-              href=""
-              className='text-sm text-zinc-400 hover:text-zinc-100'
-            >
-              Blues
-            </a>
-
-            <a 
-              href=""
-              className='text-sm text-zinc-400 hover:text-zinc-100'
-            >
-              Top Brasil
-            </a>
-
-            <a 
-              href=""
-              className='text-sm text-zinc-400 hover:text-zinc-100'
-            >
-              Hot Hits Brasil
-            </a>
-
-            <a 
-              href=""
-              className='text-sm text-zinc-400 hover:text-zinc-100'
-            >
-              Trap BR
-            </a>
-
-            <a 
-              href=""
-              className='text-sm text-zinc-400 hover:text-zinc-100'
-            >
-              Hip Hop
-            </a>
-          </nav>
-        </aside>
+        <Sidebar />
         <main 
           className="
             flex-1
@@ -334,18 +239,127 @@ export default function Home() {
             </a>
           </div>
 
+          <h2 className='font-semibold text-2xl mt-10'>
+            Made for Pedro Dias
+          </h2>
+
+          <div className='grid grid-cols-8 gap-4 mt-4'>
+            <a 
+              href='' 
+              className='
+                bg-zinc-500/5 hover:bg-white/5
+                flex flex-col gap-2 p-3 
+                rounded-md
+              '
+            >
+              <Image 
+                src="/image/dailymix-1.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+                className='w-full rounded'
+              />
+              <strong className='font-semibold'>
+                Daily Mix 1
+              </strong>
+              <span className='text-sm text-zinc-500'>
+                Metallica, AC/DC, Slipknot and more
+              </span>
+            </a>
+            <a 
+              href='' 
+              className='
+                bg-zinc-500/5 hover:bg-white/5
+                flex flex-col gap-2 p-3 
+                rounded-md
+              '
+            >
+              <Image 
+                src="/image/dailymix-2.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+                className='w-full rounded'
+              />
+              <strong className='font-semibold'>
+                Daily Mix 2
+              </strong>
+              <span className='text-sm text-zinc-500'>
+                Foo Fighters, Green Day, Paramore and more
+              </span>
+            </a>
+            <a 
+              href='' 
+              className='
+                bg-zinc-500/5 hover:bg-white/5
+                flex flex-col gap-2 p-3 
+                rounded-md
+              '
+            >
+              <Image 
+                src="/image/dailymix-3.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+                className='w-full rounded'
+              />
+              <strong className='font-semibold'>
+                Daily Mix 3
+              </strong>
+              <span className='text-sm text-zinc-500'>
+                Eminem, Jay-Z, Drake and more
+              </span>
+            </a>
+            <a 
+              href='' 
+              className='
+                bg-zinc-500/5 hover:bg-white/5
+                flex flex-col gap-2 p-3 
+                rounded-md
+              '
+            >
+              <Image 
+                src="/image/dailymix-4.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+                className='w-full rounded'
+              />
+              <strong className='font-semibold'>
+                Daily Mix 4
+              </strong>
+              <span className='text-sm text-zinc-500'>
+                John Mayer, Jason Mraz, Jack Johnson and more
+              </span>
+            </a>
+            <a 
+              href='' 
+              className='
+                bg-zinc-500/5 hover:bg-white/5
+                flex flex-col gap-2 p-3 
+                rounded-md
+              '
+            >
+              <Image 
+                src="/image/dailymix-5.jpg" 
+                alt="Capa do album"
+                height={104} 
+                width={104}
+                className='w-full rounded'
+              />
+              <strong className='font-semibold'>
+                Daily Mix 5
+              </strong>
+              <span className='text-sm text-zinc-500'>
+                Matuê, WIU, Bin and more
+              </span>
+            </a>
+          </div>
+
         </main>
       </div>
 
-      <footer 
-        className="
-          bg-zinc-800 border-t 
-          border-zinc-700
-          p-6 
-        "
-      >
-        Footer
-      </footer>
+      <Footer />
     </div>
   )
 }
