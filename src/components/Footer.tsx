@@ -1,16 +1,3 @@
-import { 
-    Play,
-    Shuffle,
-    SkipBack,
-    SkipForward,
-    Repeat,
-    Heart,
-    Mic2,
-    LayoutList,
-    Laptop2,
-    Volume1,
-    Maximize2
-  } from 'lucide-react';
 import Image from 'next/image';
 
 
@@ -39,25 +26,62 @@ export default function Footer() {
                 </span>
             </div>
 
-            <Heart className='flex p-2 w-8 h-8 ml-2' />
+            <Image
+                src="/image/icons/heart.svg"
+                height={24}
+                width={24}
+                alt='Heart icon'
+                className='flex p-2 w-8 h-8 ml-2 fill-zinc-400'
+            />
+
             </div>
             <div className='flex flex-col items-center gap-2'>
             <div className='flex items-center gap-6'>
-                <Shuffle className='text-zinc-200' size={20} />
-                <SkipBack className='text-zinc-200' size={20} />
+                <Image
+                    src="/image/icons/shuffle.svg"
+                    height={20}
+                    width={20}
+                    alt='Shuffle icon'
+                    className='fill-zinc-200'
+                />
+                 <Image
+                    src="/image/icons/skip-back.svg"
+                    height={20}
+                    width={20}
+                    alt='Skip back icon'
+                    className='fill-zinc-200'
+                />
                 <button 
                 className='
                     flex items-center justify-center  
                     w-12 h-12 pl-1
                     rounded-full 
                     bg-white
-                    text-black 
                 '
                 >
-                <Play />
+                 <Image
+                    src="/image/icons/play.svg"
+                    height={24}
+                    width={24}
+                    alt='Play icon'
+                    className='fill-black '
+
+                />
                 </button>
-                <SkipForward className='text-zinc-200' size={20} />
-                <Repeat className='text-zinc-200' size={20} />
+                <Image
+                    src="/image/icons/skip-foward.svg"
+                    height={20}
+                    width={20}
+                    alt='Skip foward icon'
+                    className='fill-zinc-200'
+                />
+                 <Image
+                    src="/image/icons/repeat.svg"
+                    height={20}
+                    width={20}
+                    alt='Repeat icon'
+                    className='fill-zinc-200'
+                />
             </div>
             <div className='flex items-center gap-2'>
                 <span className='text-xs text-zinc-500'>0:31</span>
@@ -68,16 +92,44 @@ export default function Footer() {
             </div>
             </div>
             <div className='flex items-center gap-4'>
-            <Mic2 size={20} />
-            <LayoutList size={20} />
-            <Laptop2 size={20} />
+            <Image
+                src="/image/icons/lyrics.svg"
+                height={20}
+                width={20}
+                alt='Lyrics icon'
+                className='fill-indigo-200'
+            />
+            <Image
+                src="/image/icons/queue.svg"
+                height={20}
+                width={20}
+                alt='Queue icon'
+            />
+            <Image
+                src="/image/icons/device.svg"
+                height={20}
+                width={20}
+                alt='Device icon'
+            />
+
             <div className='flex items-center gap-2'>
-                <Volume1 size={20} />
+                <Image
+                    src="/image/icons/volume.svg"
+                    height={20}
+                    width={20}
+                    alt='Volume icon'
+                />
                 <div className='h-1 rounded-full w-24 bg-zinc-600'>
                 <div className='bg-zinc-200 w-20 h-1 rounded-full'></div>
                 </div>
             </div>
-            <Maximize2 size={20}/>
+            <Image
+                src="/image/icons/maximize.svg"
+                height={20}
+                width={20}
+                alt='Maximize icon'
+                className='fill-indigo-400'
+            />
             </div>
         </footer>
     );

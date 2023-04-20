@@ -1,8 +1,3 @@
-import { 
-  ChevronLeft,
-  ChevronRight,
-  Play,
-} from 'lucide-react';
 import Image from 'next/image';
 
 import Sidebar from '@/components/Sidebar';
@@ -22,10 +17,20 @@ export default function Home() {
         >
           <div className='flex items-center gap-4' >
             <button className='rounded-full bg-black/40 p-1'>
-              <ChevronLeft />
+              <Image
+                  src="/image/icons/chevron-left.svg"
+                  height={24}
+                  width={24}
+                  alt='Chevron-left icon'
+              />
             </button>
             <button className='rounded-full bg-black/40 p-1'>
-              <ChevronRight />
+              <Image
+                  src="/image/icons/chevron-right.svg"
+                  height={24}
+                  width={24}
+                  alt='Chevron-right icon'
+              />
             </button>
           </div>
 
@@ -45,7 +50,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/wasting-light.jpg" 
+                src="/image/album/wasting-light.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -64,7 +69,12 @@ export default function Home() {
                   text-black 
                 '
               >
-                <Play />
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
               </button>
             </a>
 
@@ -79,7 +89,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/born-n-raised.jpg" 
+                src="/image/album/born-n-raised.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -98,7 +108,12 @@ export default function Home() {
                   text-black 
                 '
               >
-                <Play />
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
               </button>
             </a>
 
@@ -113,7 +128,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/paradise-valley.jpg" 
+                src="/image/album/paradise-valley.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -132,7 +147,12 @@ export default function Home() {
                   text-black 
                 '
               >
-                <Play />
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
               </button>
             </a>
 
@@ -147,7 +167,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/sonic-highways.jpg" 
+                src="/image/album/sonic-highways.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -166,7 +186,12 @@ export default function Home() {
                   text-black 
                 '
               >
-                <Play />
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
               </button>
             </a>
 
@@ -181,7 +206,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/metallica.jpg" 
+                src="/image/album/metallica.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -200,7 +225,12 @@ export default function Home() {
                   text-black 
                 '
               >
-                <Play />
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
               </button>
             </a>
 
@@ -215,7 +245,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/brand-new-eyes.jpg" 
+                src="/image/album/brand-new-eyes.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -234,7 +264,12 @@ export default function Home() {
                   text-black 
                 '
               >
-                <Play />
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
               </button>
             </a>
           </div>
@@ -253,7 +288,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/dailymix-1.jpg" 
+                src="/image/daily/dailymix-1.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -275,7 +310,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/dailymix-2.jpg" 
+                src="/image/daily/dailymix-2.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -297,7 +332,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/dailymix-3.jpg" 
+                src="/image/daily/dailymix-3.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -319,7 +354,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/dailymix-4.jpg" 
+                src="/image/daily/dailymix-4.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}
@@ -341,7 +376,7 @@ export default function Home() {
               '
             >
               <Image 
-                src="/image/dailymix-5.jpg" 
+                src="/image/daily/dailymix-5.jpg" 
                 alt="Capa do album"
                 height={104} 
                 width={104}

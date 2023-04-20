@@ -1,8 +1,3 @@
-import { 
-    Home as HomeIcon, 
-    Search, 
-    Library,
-  } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Sidebar() {
@@ -28,7 +23,12 @@ export default function Sidebar() {
                 text-sm font-semibold text-zinc-200
               '
             >
-              <HomeIcon />
+              <Image
+                src="/image/icons/home.svg"
+                height={24}
+                width={24}
+                alt='Home icon' 
+              />
               Home
             </a>
             <a 
@@ -38,7 +38,12 @@ export default function Sidebar() {
                 text-sm font-semibold text-zinc-200
               '
             >
-              <Search />
+              <Image
+                src="/image/icons/search.svg"
+                height={24}
+                width={24}
+                alt='Search icon' 
+              />
               Search
             </a>
             <a 
@@ -48,7 +53,12 @@ export default function Sidebar() {
                 text-sm font-semibold text-zinc-200
               '
             >
-              <Library />
+              <Image
+                src="/image/icons/playlist.svg"
+                height={24}
+                width={24}
+                alt='Playlist icon' 
+              />
               Your Library
             </a>
           </nav>
