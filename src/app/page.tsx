@@ -12,10 +12,19 @@ export default function Home() {
         <main 
           className="
             flex-1
-            p-6
+            p-6 relative
+
+            before:absolute before:-z-20 before:left-0 before:top-0
+            before:flex before:w-full before:h-96
+            before:bg-gradient-to-b before:from-green-900 before:to-transparent
+            before:opacity-0 
+            
+            before:transition-opacity
+            before:duration-500
+            [&:has(.album-player:hover)]:before:opacity-100
           "
         >
-          <div className='flex items-center gap-4' >
+          <div className='flex items-center gap-4'>
             <button className='rounded-full bg-black/40 p-1'>
               <Image
                   src="/image/icons/chevron-left.svg"
@@ -38,7 +47,7 @@ export default function Home() {
             Good Afternoon
           </h1>
 
-          <div className='grid grid-cols-3 gap-4 mt-4'>
+          <div className='grid grid-cols-3 gap-4 mt-4 z-20'>
             <a
               href='' 
               className='
@@ -46,7 +55,7 @@ export default function Home() {
                 rounded
                 flex items-center gap-4
                 overflow-hidden
-                group
+                group album-player
               '
             >
               <Image 
@@ -85,7 +94,7 @@ export default function Home() {
                 rounded
                 flex items-center gap-4
                 overflow-hidden 
-                group
+                group album-player
               '
             >
               <Image 
@@ -95,7 +104,7 @@ export default function Home() {
                 width={104}
               />
               <strong>
-                Wasting Light
+                Born And Raised
               </strong>
 
               <button 
@@ -124,7 +133,7 @@ export default function Home() {
                 rounded
                 flex items-center gap-4
                 overflow-hidden
-                group
+                group album-player
               '
             >
               <Image 
@@ -134,7 +143,7 @@ export default function Home() {
                 width={104}
               />
               <strong>
-                Wasting Light
+                Paradise Valley
               </strong>
 
               <button 
@@ -163,7 +172,7 @@ export default function Home() {
                 rounded
                 flex items-center gap-4
                 overflow-hidden
-                group
+                group album-player
               '
             >
               <Image 
@@ -173,7 +182,7 @@ export default function Home() {
                 width={104}
               />
               <strong>
-                Wasting Light
+                Sonic Highways
               </strong>
 
               <button 
@@ -202,7 +211,7 @@ export default function Home() {
                 rounded
                 flex items-center gap-4
                 overflow-hidden
-                group
+                group album-player
               '
             >
               <Image 
@@ -212,7 +221,7 @@ export default function Home() {
                 width={104}
               />
               <strong>
-                Wasting Light
+                Metallica
               </strong>
 
               <button 
@@ -241,7 +250,7 @@ export default function Home() {
                 rounded
                 flex items-center gap-4
                 overflow-hidden
-                group
+                group album-player
               '
             >
               <Image 
@@ -251,7 +260,7 @@ export default function Home() {
                 width={104}
               />
               <strong>
-                Wasting Light
+                Brand New Eyes
               </strong>
 
               <button 
@@ -284,7 +293,7 @@ export default function Home() {
               className='
                 bg-zinc-500/5 hover:bg-white/5
                 flex flex-col gap-2 p-3 
-                rounded-md
+                rounded-md relative group
               '
             >
               <Image 
@@ -300,13 +309,31 @@ export default function Home() {
               <span className='text-sm text-zinc-500'>
                 Metallica, AC/DC, Slipknot and more
               </span>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 
+                  rounded-full 
+                  bg-green-500 
+                  opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 
+                  absolute top-28 right-8
+                '
+              >
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
+              </button>
             </a>
             <a 
               href='' 
               className='
                 bg-zinc-500/5 hover:bg-white/5
                 flex flex-col gap-2 p-3 
-                rounded-md
+                rounded-md relative group
               '
             >
               <Image 
@@ -322,13 +349,31 @@ export default function Home() {
               <span className='text-sm text-zinc-500'>
                 Foo Fighters, Green Day, Paramore and more
               </span>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 
+                  rounded-full 
+                  bg-green-500 
+                  opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 
+                  absolute top-28 right-8
+                '
+              >
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
+              </button>
             </a>
             <a 
               href='' 
               className='
                 bg-zinc-500/5 hover:bg-white/5
                 flex flex-col gap-2 p-3 
-                rounded-md
+                rounded-md relative group
               '
             >
               <Image 
@@ -344,13 +389,31 @@ export default function Home() {
               <span className='text-sm text-zinc-500'>
                 Eminem, Jay-Z, Drake and more
               </span>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 
+                  rounded-full 
+                  bg-green-500 
+                  opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 
+                  absolute top-28 right-8
+                '
+              >
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
+              </button>
             </a>
             <a 
               href='' 
               className='
                 bg-zinc-500/5 hover:bg-white/5
                 flex flex-col gap-2 p-3 
-                rounded-md
+                rounded-md relative group
               '
             >
               <Image 
@@ -366,13 +429,31 @@ export default function Home() {
               <span className='text-sm text-zinc-500'>
                 John Mayer, Jason Mraz, Jack Johnson and more
               </span>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 
+                  rounded-full 
+                  bg-green-500 
+                  opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 
+                  absolute top-28 right-8
+                '
+              >
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
+              </button>
             </a>
             <a 
               href='' 
               className='
                 bg-zinc-500/5 hover:bg-white/5
                 flex flex-col gap-2 p-3 
-                rounded-md
+                rounded-md relative group
               '
             >
               <Image 
@@ -388,6 +469,24 @@ export default function Home() {
               <span className='text-sm text-zinc-500'>
                 Matuê, WIU, Bin and more
               </span>
+
+              <button 
+                className='
+                  flex items-center justify-center  
+                  w-12 h-12 pl-1 
+                  rounded-full 
+                  bg-green-500 
+                  opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 
+                  absolute top-28 right-8
+                '
+              >
+                <Image
+                  src="/image/icons/play.svg"
+                  height={24}
+                  width={24}
+                  alt='Play icon'
+                />
+              </button>
             </a>
           </div>
 

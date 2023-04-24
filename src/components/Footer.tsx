@@ -56,7 +56,8 @@ export default function Footer() {
                     flex items-center justify-center  
                     w-12 h-12 pl-1
                     rounded-full 
-                    bg-white
+                    bg-white hover:bg-green-500
+                    transition-colors duration-300
                 '
                 >
                  <Image
@@ -64,7 +65,7 @@ export default function Footer() {
                     height={24}
                     width={24}
                     alt='Play icon'
-                    className='fill-black '
+                    className='text-black fill-black'
 
                 />
                 </button>
@@ -97,7 +98,6 @@ export default function Footer() {
                 height={20}
                 width={20}
                 alt='Lyrics icon'
-                className='fill-indigo-200'
             />
             <Image
                 src="/image/icons/queue.svg"
@@ -128,7 +128,6 @@ export default function Footer() {
                 height={20}
                 width={20}
                 alt='Maximize icon'
-                className='fill-indigo-400'
             />
             </div>
         </footer>
