@@ -41,6 +41,7 @@ export default function DailyMix() {
                         thumbnail={dailyMix.thumbnail}
                         title={dailyMix.title}
                         description={dailyMix.description}
+                        key={dailyMix.title}
                     />
                 )) }
             </div>

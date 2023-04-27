@@ -4,7 +4,10 @@ import Playlists from '@/components/Playlists';
 import DailyMix from '@/components/DailyMix';
 import Footer from '@/components/Footer';
 
-export default function Home() {
+import { GetServerSideProps } from 'next';
+
+export default function Home(props) {
+  console.log("MESSAGE:", props);
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
@@ -36,4 +39,10 @@ export default function Home() {
       <Footer />
     </div>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: { message: `Next.js is awesome` }, // will be passed to the page component as props
+  }
 }

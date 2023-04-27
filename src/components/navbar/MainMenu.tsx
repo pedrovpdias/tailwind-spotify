@@ -22,9 +22,10 @@ export default function MainMenu() {
                 <a 
                     href='' 
                     className='
-                    flex items-center gap-4 
-                    text-xs font-semibold text-zinc-200 hover:text-zinc-50 hover:underline
+                        flex items-center gap-4 
+                        text-xs font-semibold text-zinc-200 hover:text-zinc-50 hover:underline
                     '
+                    key={item.title}
                 >
                     <Image
                     src={item.icon}

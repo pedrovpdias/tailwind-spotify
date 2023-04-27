@@ -1,7 +1,6 @@
-import { GetServerSideProps } from "next";
 import PlaylistPlayer from "./PlaylistPlayer";
 
-export default function Playlists( { albums } ) {
+export default function Playlists() {
     const playlists = [
         {
             thumbnail: '/image/album/wasting-light.jpg',
@@ -40,25 +39,11 @@ export default function Playlists( { albums } ) {
                     <PlaylistPlayer 
                         thumbnail={playlist.thumbnail}
                         title={playlist.title}
+                        key={playlist.title}
                     />
                 )) }
 
             </div>
-
-            <ul>
-                { albums && albums.map(album => (<li key={album.id}>ok</li>))}
-            </ul>
         </>
     );
-}
-
-export const getServerSideProps: GetServerSideProps = async () => {
-    const response = await fetch(`${process.env.BASE_URL}api/album`);
-    const data = await  response.json();
-
-    return {
-        props: {
-            albums: data
-        }
-    }
 }
