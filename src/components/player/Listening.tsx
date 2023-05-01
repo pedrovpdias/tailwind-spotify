@@ -13,7 +13,7 @@ export default function Listening() {
                 <strong className='font-normal'>
                 Something from Nothing
                 </strong>
-                <span className='text-sm text-zinc-400'>
+                <span className='text-sm text-neutral-400'>
                 Foo Fighters
                 </span>
             </div>
@@ -23,7 +23,7 @@ export default function Listening() {
                 height={24}
                 width={24}
                 alt='Heart icon'
-                className='flex p-2 w-8 h-8 ml-2 fill-zinc-400'
+                className='flex p-2 w-8 h-8 ml-2 fill-neutral-400'
             />
 
         </div>

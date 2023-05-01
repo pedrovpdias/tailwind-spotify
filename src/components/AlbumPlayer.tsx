@@ -5,7 +5,7 @@ export default function PlaylistPlayer( { thumbnail, title } ) {
         <a
             href='' 
             className='
-                bg-white/10 hover:bg-white/20 transition-colors
+                bg-neutral-500/20 hover:bg-neutral-100/20 transition-colors
                 rounded
                 flex items-center gap-4
                 overflow-hidden
@@ -27,7 +27,7 @@ export default function PlaylistPlayer( { thumbnail, title } ) {
                 flex items-center justify-center  
                 w-12 h-12 pl-1 ml-auto mr-8 
                 rounded-full 
-                bg-green-500 
+                bg-green-500 shadow-xl shadow-black/30
                 invisible group-hover:visible
                 text-black 
             '

@@ -1,13 +1,11 @@
 import Sidebar from '@/components/Sidebar';
 import MainHeader from '@/components/HomeHeader';
-import Playlists from '@/components/Playlists';
+import Albums from '@/components/Albums';
 import DailyMix from '@/components/DailyMix';
 import Footer from '@/components/Footer';
+import TrendSection from '@/components/TrendSection';
 
-import { GetServerSideProps } from 'next';
-
-export default function Home(props) {
-  console.log("MESSAGE:", props);
+export default function Home() {
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
@@ -15,34 +13,39 @@ export default function Home(props) {
         <main 
           className="
             flex-1
-            p-6 relative
+            py-4 px-8 relative
+            ml-60 mb-20
 
             before:absolute before:-z-20 before:left-0 before:top-0
             before:flex before:w-full before:h-96
-            before:bg-gradient-to-b before:from-green-900 before:to-transparent
-            before:opacity-0 
+            before:bg-gradient-to-b before:from-emerald-300/20 before:to-transparent
             
-            before:transition-opacity
+            before:transition-opacity before:opacity-100
             before:duration-500
-            [&:has(.album-player:hover)]:before:opacity-100
+            [&:has(.album-player:hover)]:before:opacity-0
+
+            after:absolute after:-z-20 after:left-0 after:top-0
+            after:flex after:w-full after:h-96
+            after:bg-gradient-to-b after:from-neutral-100/20 after:to-transparent
+            
+            after:transition-opacity after:opacity-0
+            after:duration-500
+            [&:has(.album-player:hover)]:after:opacity-100
           "
         >
           <MainHeader />
 
-          <Playlists />
+          {/*@ts-expect-error Async Server Component*/}
+          <Albums />
 
           <DailyMix />
 
+          <TrendSection />
+
         </main>
       </div>
-
+      
       <Footer />
     </div>
   )
-}
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  return {
-    props: { message: `Next.js is awesome` }, // will be passed to the page component as props
-  }
 }

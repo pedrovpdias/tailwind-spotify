@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-    const url = `${process.env.API_URL}albums/382ObEPsp2rxGrnsizN5TX`;
+    const url = `${process.env.API_URL}albums/?ids=5lnQLEUiVDkLbFJHXHQu9m,2qwN15acAl3sm3Idce5vK9,27UqZoE1kV6sIV6uQcI28A,712VoD72K500yLhhgqCyVe,7h5xn0Olvx2p0eQcSt1Osy,6S0BIiWtnqU0PtumXMpin0`;
 
     const token = await fetch(`${process.env.BASE_URL}api/access-token`);
     const accessToken = await token.json();

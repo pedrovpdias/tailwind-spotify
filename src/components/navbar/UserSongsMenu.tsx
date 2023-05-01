@@ -7,12 +7,12 @@ export default function UserSongsMenu() {
               href=""
               className='
                 flex items-center gap-3 
-                text-xs font-semibold hover:text-zinc-50 hover:underline
+                text-xs font-semibold text-neutral-400 hover:text-white transition-color duration-300 group
               '
             >
               <div className='
                 flex items-center justify-center h-6 w-6 p-1
-                bg-zinc-200 rounded-sm'
+                rounded-sm bg-neutral-400 group-hover:bg-white transition-color duration-300'
               >
                 <Image
                   src="/image/icons/plus.svg"
@@ -29,12 +29,12 @@ export default function UserSongsMenu() {
               href=""
               className='
                 flex items-center gap-3 
-                text-xs font-semibold hover:text-zinc-50 hover:underline
+                text-xs font-semibold text-neutral-400 hover:text-white transition-color duration-300 group
               '
             >
               <div className='
                 flex items-center justify-center h-6 w-6 p-1
-                rounded-sm bg-gradient-to-br from-indigo-800 to-zinc-400
+                rounded-sm bg-gradient-to-br from-indigo-800 to-neutral-400 group-hover:brightness-125 transition-all duration-300
                 '
               >
                 <Image

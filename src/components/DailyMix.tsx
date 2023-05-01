@@ -1,4 +1,5 @@
-import DailyMixCard from "./DailyMixCard";
+import PlaylistCard from "./PlaylistCard";
+import SectionTitle from "./SectionTitle";
 
 export default function DailyMix() {
     const dailyMixes = [
@@ -26,18 +27,21 @@ export default function DailyMix() {
             thumbnail: '/image/daily/dailymix-5.jpg',
             title: 'Daily Mix 5',
             description: 'Matuê, WIU, Bin and more'
+        },
+        {
+            thumbnail: '/image/daily/dailymix-6.jpg',
+            title: 'Daily Mix 6',
+            description: 'Buddy Guy, B.B King, Stevie Ray Vaughan and more'
         }
     ]
 
     return (
-        <>
-            <h2 className='font-semibold text-2xl mt-10'>
-                Made for Pedro Dias
-            </h2>
+        <section>
+            <SectionTitle title="Made for Pedro Dias" />
             
-            <div className='grid grid-cols-8 gap-4 mt-4'>
+            <div className='grid grid-cols-8 gap-4 mt-4 w-fit'>
                 { dailyMixes && dailyMixes.map(dailyMix => (
-                    <DailyMixCard 
+                    <PlaylistCard 
                         thumbnail={dailyMix.thumbnail}
                         title={dailyMix.title}
                         description={dailyMix.description}
@@ -45,6 +49,6 @@ export default function DailyMix() {
                     />
                 )) }
             </div>
-        </>
+        </section>
     );
 }
