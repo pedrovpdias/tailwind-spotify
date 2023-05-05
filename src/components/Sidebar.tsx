@@ -42,7 +42,7 @@ export default function Sidebar() {
               alt='Download icon'
               className='group-hover:brightness-200 transition duration-300 '
             />
-            Instalar aplicativo
+            Install app
           </button>
 
         </aside>

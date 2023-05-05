@@ -34,11 +34,11 @@ export default function UserSongsMenu() {
             >
               <div className='
                 flex items-center justify-center h-6 w-6 p-1
-                rounded-sm bg-gradient-to-br from-indigo-800 to-neutral-400 group-hover:brightness-125 transition-all duration-300
+                rounded-sm bg-gradient-to-br from-indigo-800 to-neutral-400 group-hover:brightness-150 transition-all duration-300
                 '
               >
                 <Image
-                  src="/image/icons/heart-fill.svg"
+                  src="/image/icons/heart-a.svg"
                   height={24}
                   width={24}
                   alt='Plus icon'

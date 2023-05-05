@@ -6,23 +6,23 @@ export default function TrendSection() {
     const trending = [
         {
             thumbnail: '/image/trend/region_global_default.jpg',
-            title: 'Daily Mix 6',
-            description: 'Mundo: seu relatório semanal das faixas mais tocadas no momento'
+            title: 'Top songs – World',
+            description: 'World: Your weekly update of the most played tracks right now – Global'
         },
         {
             thumbnail: '/image/trend/region_br_default.jpg',
-            title: 'Daily Mix 6',
-            description: 'Brazil: seu relatório semanal das faixas mais tocadas no momento'
+            title: 'Top songs – Brazil',
+            description: 'Brazil: Your weekly update of the most played tracks right now – Brazil'
         },
         {
             thumbnail: '/image/trend/region_global_viral.jpg',
-            title: 'Daily Mix 6',
-            description: 'Mundo: seu relatório diário das faixas mais tocadas no momento'
+            title: 'Viral 50 – World',
+            description: 'Your daily update of the most viral tracks right now – Global'
         },
         {
             thumbnail: '/image/trend/region_br_viral.jpg',
-            title: 'Daily Mix 6',
-            description: 'Brazil: seu relatório diário das faixas mais tocadas no momento'
+            title: 'Viral 50 – Brazil',
+            description: 'Your daily update of the most viral tracks right now – Brazil'
         }
     ]
     
@@ -35,7 +35,8 @@ export default function TrendSection() {
                     <PlaylistCard 
                         thumbnail={topic.thumbnail}
                         title={topic.title}
-                        description={topic.description} 
+                        description={topic.description}
+                        key={topic.title}
                     />
                 )) }
             </div>

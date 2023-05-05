@@ -1,6 +1,18 @@
 import Image from "next/image";
 
 export default function PlaylistCard( {thumbnail, title, description} ) {
+    
+    function resizeText( text ) {
+        const sizeText  = text.length;
+        
+        if(text.length > 36) {
+            text = text.substring( 0, 36) + "..."; 
+            return text;
+        }
+
+        else return text;
+    }
+
     return (
         <a 
             href='' 
@@ -8,11 +20,11 @@ export default function PlaylistCard( {thumbnail, title, description} ) {
                 bg-neutral-800/30 hover:bg-white/10
                 flex flex-col gap-5 p-4 
                 rounded-md relative group
-                w-48
+                w-44
             '
         >
             <div
-                className="w-full h-40 rounded
+                className="w-full h-36 rounded
                     shadow-xl shadow-black/40 overflow-hidden"
             >
                 <Image 
@@ -28,7 +40,7 @@ export default function PlaylistCard( {thumbnail, title, description} ) {
                     {title}
                 </strong>
                 <span className='text-sm text-neutral-500'>
-                    {description}
+                    {resizeText(description)}
                 </span>
             </div>
 
@@ -40,7 +52,7 @@ export default function PlaylistCard( {thumbnail, title, description} ) {
                 bg-green-500 
                 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 
                 shadow-xl shadow-black/50
-                absolute top-28 right-8
+                absolute top-24 right-8
             '
             >
             <Image
